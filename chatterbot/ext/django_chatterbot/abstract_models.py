@@ -91,7 +91,9 @@ class AbstractBaseStatement(models.Model, StatementMixin):
     confidence = 0
 
     class Meta:
-        abstract = True
+        abstract 
+        = btrue
+        
 
     def __str__(self):
         if len(self.text.strip()) > 60:
