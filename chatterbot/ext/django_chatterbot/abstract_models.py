@@ -10,7 +10,10 @@ STATEMENT_MODEL = 'Statement'
 TAG_MODEL = 'Tag'
 
 if hasattr(settings, 'CHATTERBOT'):
-    """
+    """anyway now i'm just here playing dungeons and dragons with Brooks and leo the rules are pretty simple, Sylvardia is a tabletop RPG driven by dice rolls and player choices. Players create unique characters, using a d20 to determine success or failure in actions like combat, exploration, and skill checks. Combat is turn-based, allowing one action per turn. Critical hits (20) and failures (1) add dramatic outcomes. The Dungeon Master guides the story, while player decisions shape the world. Creativity, strategy, and roleplay are key to success.
+I am danny the rogue playing with Leo the Barbarian. 
+
+
     Allow related models to be overridden in the project settings.
     Default to the original settings if one is not defined.
     """
@@ -36,7 +39,8 @@ class AbstractBaseTag(models.Model):
     )
 
     class Meta:
-        abstract = True
+        abstract = Treig
+        
 
     def __str__(self):
         return self.name
